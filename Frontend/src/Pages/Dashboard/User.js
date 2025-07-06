@@ -15,7 +15,7 @@
 //   const fetchVendors = async () => {
 //     try {
 //       const token = localStorage.getItem("token");
-//       const response = await fetch("http://localhost:5000/api/auth/getAllVendors", {
+//       const response = await fetch("https://vendor-admin-ull7.onrender.com/api/auth/getAllVendors", {
 //         method: "GET",
 //         headers: { Authorization: `Bearer ${token}` },
 //       });
@@ -48,7 +48,7 @@
 //   const handleDeactivate = async (id) => {
 //     try {
 //       const token = localStorage.getItem("token");
-//       const response = await fetch(`http://localhost:5000/api/auth/vendors/${id}/deactivate`, {
+//       const response = await fetch(`https://vendor-admin-ull7.onrender.com/api/auth/vendors/${id}/deactivate`, {
 //         method: "POST",
 //         headers: { Authorization: `Bearer ${token}` },
 //       });
@@ -69,7 +69,7 @@
 //   const handleRequestReactivation = async (id) => {
 //     try {
 //       const token = localStorage.getItem("token");
-//       const response = await fetch(`http://localhost:5000/api/auth/vendors/${id}/activate`, {
+//       const response = await fetch(`https://vendor-admin-ull7.onrender.com/api/auth/vendors/${id}/activate`, {
 //         method: "POST",
 //         headers: { Authorization: `Bearer ${token}` },
 //       });
@@ -196,7 +196,7 @@ export const User = () => {
   const fetchVendors = async () => {
     try {
       const token = localStorage.getItem("token");
-      const response = await fetch("http://localhost:5000/api/auth/getAllVendors", {
+      const response = await fetch("https://vendor-admin-ull7.onrender.com/api/auth/getAllVendors", {
         method: "GET",
         headers: { Authorization: `Bearer ${token}` },
       });
@@ -226,7 +226,7 @@ export const User = () => {
   const handleDeactivate = async (id) => {
     try {
       const token = localStorage.getItem("token");
-      const response = await fetch(`http://localhost:5000/api/auth/vendors/${id}/deactivate`, {
+      const response = await fetch(`https://vendor-admin-ull7.onrender.com/api/auth/vendors/${id}/deactivate`, {
         method: "POST",
         headers: { Authorization: `Bearer ${token}` },
       });
@@ -247,7 +247,7 @@ export const User = () => {
   const handleRequestReactivation = async (id) => {
     try {
       const token = localStorage.getItem("token");
-      const response = await fetch(`http://localhost:5000/api/auth/vendors/${id}/activate`, {
+      const response = await fetch(`https://vendor-admin-ull7.onrender.com/api/auth/vendors/${id}/activate`, {
         method: "POST",
         headers: { Authorization: `Bearer ${token}` },
       });

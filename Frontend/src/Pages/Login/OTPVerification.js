@@ -15,7 +15,7 @@
 //     e.preventDefault();
 //         try {
 //       const response = await axios.post(
-//         "http://localhost:5000/api/admin/verifyotp",
+//         "https://vendor-admin-ull7.onrender.com/api/admin/verifyotp",
 //         { email, otp },
 //         { withCredentials: true }  // ✅ Allows cookies to be sent/received
 //       );
